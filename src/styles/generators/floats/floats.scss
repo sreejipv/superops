@@ -1,0 +1,12 @@
+$float: (
+    'left': left,
+    'right': right,
+    'none': none
+  );
+
+
+  @each $float, $value in $float {
+    .f-#{$float} {
+      float: $value
+    }
+  }

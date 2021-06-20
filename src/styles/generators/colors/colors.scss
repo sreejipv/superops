@@ -1,0 +1,26 @@
+// ------------------------------
+// Color
+// ------------------------------
+
+$colors: (
+  // Neutral
+  'white': #FFFFFF,
+  'grey-80': #333333,
+  'grey-90': #1A1A1A,
+  'black': #000000,
+  'vilot': #6234ee,
+  'red': #D0021B,
+  'blue': #3366CC
+);
+
+@each $color, $value in $colors {
+    .c-#{$color} {
+      color: $value;
+    }
+}
+
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color:  $value;;
+  }
+}

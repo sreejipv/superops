@@ -1,0 +1,16 @@
+
+// ------------------------------
+// Cursors
+// ------------------------------
+
+$cursor: (
+    'auto': auto,
+    'default': default,
+    'pointer': pointer
+  );
+  
+@each $cursor, $value in $cursor {
+    .c-#{$cursor} {
+      cursor: $value
+    }
+  }

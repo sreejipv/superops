@@ -1,0 +1,21 @@
+$overflow: (
+    'auto': auto,
+    'scroll': scroll,
+    'visible': visible,
+    'hidden': hidden
+);
+
+// ------------------------------
+// Overflow
+// ------------------------------
+@each $overflow, $value in $overflow {
+    .o-#{$overflow} {
+      overflow: $value
+    }
+    .ox-#{$overflow} {
+      overflow-x: $value
+    }
+    .oy-#{$overflow} {
+      overflow-y: $value
+    }
+  }

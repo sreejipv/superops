@@ -1,0 +1,21 @@
+
+// ------------------------------
+// Display
+// ------------------------------
+
+$display: (
+  'block': block,
+  'inline': inline,
+  'inline-block': inline-block,
+  'flex': flex,
+  'inline-flex': inline-flex,
+  'table': table,
+  'none': none
+);
+
+@each $display, $value in $display {
+    .d-#{$display} {
+      display: $value
+    }
+  }
+  

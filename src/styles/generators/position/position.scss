@@ -1,0 +1,16 @@
+
+   $strategies: (
+    'absolute': absolute,
+    'fixed': fixed,
+    'relative': relative,
+    'static': static,
+    'sticky': sticky
+  );
+// ------------------------------
+// Position
+// ------------------------------
+@each $position, $value in $strategies {
+    .p-#{$position} {
+      position: $value;
+    }
+  }
